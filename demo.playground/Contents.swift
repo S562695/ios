@@ -30,11 +30,31 @@ class LoginViewController: UIViewController {
         loginButton.translatesAutoresizingMaskIntoConstraints = false
         loginButton.addTarget(self, action: #selector(loginButtonTapped), for: .touchUpInside)
         view.addSubview(loginButton)
+        
+        setupConstraints()
     }
-        
-        
-        
+    
+    func setupConstraints() {
+        NSLayoutConstraint.activate([
+            usernameTextField.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
+            usernameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            usernameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            
+            passwordTextField.topAnchor.constraint(equalTo: usernameTextField.bottomAnchor, constant: 20),
+            passwordTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            passwordTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            
+            loginButton.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 20),
+            loginButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            loginButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+        ])
     }
+    
+  
+        
+        
+        
+    
 
 
 
