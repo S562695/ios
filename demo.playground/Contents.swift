@@ -17,6 +17,15 @@ class LoginViewController: UIViewController {
         usernameTextField.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(usernameTextField)
         
+        passwordTextField.placeholder = "Password"
+        passwordTextField.isSecureTextEntry = true
+        passwordTextField.borderStyle = .roundedRect
+        passwordTextField.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(passwordTextField)
+        
+        
+
+        
     }
 }
 
