@@ -50,7 +50,23 @@ class LoginViewController: UIViewController {
         ])
     }
     
-  
+    @objc func loginButtonTapped() {
+        // Handle login logic here
+        let username = usernameTextField.text
+        let password = passwordTextField.text
+        
+        // Add your login validation logic here
+        if username == "your_username" && password == "your_password" {
+            print("Login successful")
+        } else {
+            print("Login failed")
+        }
+    }
+}
+
+let loginViewController = LoginViewController()
+PlaygroundPage.current.liveView = loginViewController
+
         
         
         
