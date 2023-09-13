@@ -19,8 +19,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var firstStrTF: UITextField!
     
-    @IBOutlet weak var secondStrTF: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
