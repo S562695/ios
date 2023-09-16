@@ -22,8 +22,9 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTr-VF-Nlt">
                                         <rect key="frame" x="0.0" y="0.0" width="523.33333333333337" height="68.666666666666671"/>
+                                        <color key="backgroundColor" red="0.15540984878902106" green="0.36930170747422686" blue="0.045968661217692164" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="26"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jj1-e9-LDA" userLabel="PlayWithSV">
@@ -197,7 +198,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Nu5-56-wMG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="280.33333333333337" id="L7m-fv-E2v"/>
+                            <constraint firstItem="Nu5-56-wMG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="280.33333333333337" id="L7m-fv-E2v" userLabel="Safe Area.trailing = BigContainerSV.trailing+20"/>
                         </constraints>
                     </view>
                     <connections>
@@ -218,6 +219,9 @@
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
